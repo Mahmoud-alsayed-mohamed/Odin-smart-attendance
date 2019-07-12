@@ -1,0 +1,21 @@
+1- python extract_embeddings.py --dataset dataset \
+	--embeddings output/embeddings.pickle \
+	--detector face_detection_model \
+	--embedding-model openface_nn4.small2.v1.t7
+
+
+
+2- python train_model.py --embeddings output/embeddings.pickle \
+	--recognizer output/recognizer.pickle \
+	--le output/le.pickle
+
+
+
+*****code errors for now****
+ File "recognize_video.py", line 105
+    att={"name":name}
+                    ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+****solved and the error was in editor
+
